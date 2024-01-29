@@ -93,6 +93,14 @@ body{
     background-size: cover;
     padding: 230px 0 120px;
     position: relative;
+    margin-bottom: 116px;
+    @media only screen and (min-width:768px) and (max-width:1024px){
+        margin-bottom:78px ;
+    }
+    @media only screen and (min-width:320px) and (max-width:767px){
+        margin-bottom: 40px;
+    }
+    
     &__container{
         position: relative;
         z-index: 1;
@@ -183,17 +191,35 @@ body{
 }
 .description{
     &__container{
-        padding: 116px;
+        max-width:1200px ;
+        padding: 0 15px;
         display: grid;
         grid-template-columns:repeat(3, 1fr);
         column-gap:31px ;
         row-gap: 88px;
+        margin-bottom: 116px;
+        @media only screen and (min-width:768px) and (max-width:1024px){
+            max-width: 1014px;
+            margin-bottom:80px ;
+            column-gap: 20px;
+            row-gap:49px ;
+        }
+        @media only screen and (min-width:320px) and (max-width:767px){
+            max-width: 309px;
+            display: block;
+            margin-bottom: 34px;
+        }
     }
     &__logo{
         display: flex;
         justify-content: center;
         margin-bottom: 29px;
-
+        @media only screen and (min-width:768px) and (max-width:1024px){
+            margin-bottom: 24px;
+        }
+        @media only screen and (min-width:320px) and (max-width:767px){
+            margin-bottom: 21px;
+        }
     }
     &__title{
         color: #2D3033;
@@ -204,6 +230,16 @@ body{
         line-height: 28px;
         text-transform: uppercase;
         margin-bottom: 20px;
+        padding: 22px;
+        @media only screen and (min-width:768px) and (max-width:1024px){
+            margin-bottom: 4px;
+            padding:19px ;
+            line-height: 21px;
+            font-size: 18px;
+        }
+        @media only screen and (min-width:320px) and (max-width:767px){
+            margin-bottom: 0;
+        }
     }
     &__text{
         color: #6C7279;
@@ -214,12 +250,29 @@ body{
         line-height: 21px;
         max-width: 370px;
         width: 100%;
+        @media only screen and (min-width:768px) and (max-width:1024px){
+            font-size: 14px;
+            line-height: 16px;
+        }
+        @media only screen and (min-width:320px) and (max-width:767px){
+            margin-bottom: 41px;
+        }
     }
 }
 .projects{
+    margin-bottom: 114px;
+    @media only screen and (min-width:768px) and (max-width:1024px){
+        margin-bottom: 78px;
+    }
+    @media only screen and (min-width:320px) and (max-width:767px){
+        margin-bottom: 35px;
+    }
     &__container{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        @media only screen and (min-width:320px) and (max-width:767px){
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
     &__content{
         position: relative;
@@ -259,28 +312,64 @@ body{
         text-transform: uppercase;
         margin-bottom:20px ;
         padding: 15px;
+        @media only screen and (min-width:768px) and (max-width:1024px){
+            font-size: 18px;
+            line-height: 21px;
+            padding: 9px;
+            margin-bottom: 12px;
+        }
+        @media only screen and (min-width:320px) and (max-width:767px){
+            margin-bottom: 4px;
+        }
     }
     &__text{
         color: #FFF;
         text-align: center;
         font-size: 18px;
         line-height: 21px;
+        @media only screen and (min-width:768px) and (max-width:1024px){
+            font-size: 14px;
+            line-height: 16px;
+        }
     }
 }
 .reviews{
+    margin-bottom: 114px;
+    @media only screen and (min-width:768px) and (max-width:1024px){
+        margin-bottom: 78px;   
+    }
+    @media only screen and (min-width:320px) and (max-width:767px){
+        margin-bottom: 34px;    
+    }
     &__container{
-        padding: 114px 170px;
+        padding: 0 15px;
+        margin: 0 auto;
+        max-width: 1200px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         column-gap:30px;
+        @media only screen and (min-width:768px) and (max-width:1024px){
+            padding: 78px 20px;
+            column-gap: 25px;
+        }
+        @media only screen and (min-width:320px) and (max-width:767px){
+            max-width:310px ;
+            display: block;
+        }
     }
     &__content{
         max-width: 270px;
+        @media only screen and (min-width:768px) and (max-width:1024px){
+            max-width: 227px;
+        }
     }
     &__image{
         object-fit: cover;
         object-position: center;
         margin-bottom: 30px;
+        @media only screen and (min-width:768px) and (max-width:1024px){
+            margin-bottom: 25px;
+        }
     }
     &__name{
         color: #2D3033;
@@ -290,6 +379,10 @@ body{
         line-height: 28px;
         text-transform: capitalize;
         margin-bottom: 5px;
+        @media only screen and (min-width:768px) and (max-width:1024px){
+            font-size: 18px;
+            line-height: 21px;
+        }
     }
     &__speciality{
         color: #FF4343;
@@ -299,24 +392,56 @@ body{
         line-height: 21px;
         text-transform: uppercase;
         margin-bottom: 18px;
+        @media only screen and (min-width:768px) and (max-width:1024px){
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 22px;
+        }
+        @media only screen and (min-width:320px) and (max-width:767px){
+            margin-bottom: 38px;
+        }
     }
     &__text{
         color: #6C7279;
         font-size: 18px;
         line-height: 21px;
         margin-bottom: 38px;
+        @media only screen and (min-width:768px) and (max-width:1024px){
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 39px;
+        }
+        @media only screen and (min-width:320px) and (max-width:767px){
+            margin-bottom: 55px;
+        }
+    }
+    &__icon{
+        @media only screen and (min-width:320px) and (max-width:767px){
+            margin-bottom: 49px;
+        }
     }
 }
 
 
 .comments{
+    margin-bottom: 114px;
+    @media only screen and (min-width:768px) and (max-width:1024px){
+        margin-bottom:77px ;   
+    }
     &__container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        @media only screen and (min-width:320px) and (max-width:767px){
+            max-width: 320px;
+            display: block;
+            margin: 0 auto;
+        }
     }
     &__image{
         object-fit: cover;
         object-position: center;
+        width: 100%;
+        height: 100%;
     }
     &__content{
         background-color: #5C3249;
@@ -324,7 +449,12 @@ body{
         flex-direction: column;
         justify-content: center;
         padding:116px 170px 116px 129px;
-        
+        @media only screen and (min-width:768px) and (max-width:1024px){
+            padding:47px 104px 110px 88px ;
+        }
+        @media only screen and (min-width:320px) and (max-width:767px){
+            padding: 0 25px 95px 20px;
+        }
     }
     &__text{
         color: #FFF;
@@ -333,6 +463,13 @@ body{
         font-weight: 400;
         line-height: 49px;
         text-transform: capitalize;
+        @media only screen and (min-width:768px) and (max-width:1024px){
+            font-size: 24px;
+            line-height: 32px;
+        }
+        @media only screen and (min-width:320px) and (max-width:767px){
+            padding: 23px 0;
+        }
     }
     &__speciality{
         color: #FFF;
@@ -341,6 +478,10 @@ body{
         font-weight: 700;
         line-height: 15px;
         text-transform: uppercase;
+        @media only screen and (min-width:768px) and (max-width:1024px){
+            font-size: 12px;
+            line-height: 14px;
+        }
     }
 }    
 
@@ -348,8 +489,20 @@ body{
 
 
 .download{
+    margin-bottom:114px ;
+    @media only screen and (min-width:768px) and (max-width:1024px){
+        margin-bottom: 78px;
+    }
     &__container{
-        padding:114px 0 ;
+        padding: 0 15px;
+        margin: 0 auto;
+        max-width: 1200px;
+        @media only screen and (min-width:768px) and (max-width:1024px){
+            max-width: 1014px;
+        }
+        @media only screen and (min-width:320px) and (max-width:767px){
+            max-width: 310px;
+        }
     }
     &__ask{
         color: #000;
@@ -359,6 +512,15 @@ body{
         font-weight: 500;
         line-height: 35px;
         margin-bottom: 5px;
+        @media only screen and (min-width:768px) and (max-width:1024px){
+            line-height: 28px;
+            font-size: 24px;
+        }
+        @media only screen and (min-width:320px) and (max-width:767px){
+            margin-bottom: 3px;
+            line-height: 21px;
+            font-size: 18px;
+        }
     }
     &__text{
         color: #000;
@@ -369,6 +531,16 @@ body{
         line-height: 21px;
         text-transform: uppercase;
         margin-bottom: 47px;
+        @media only screen and (min-width:768px) and (max-width:1024px){
+            margin-bottom: 43px;
+            line-height: 16px;
+            font-size: 14px;
+        }
+        @media only screen and (min-width:320px) and (max-width:767px){
+            margin-bottom: 11px;
+            line-height: 15px;
+            font-size: 13px;
+        }
     }
     &__button{
         color: #FFF;
@@ -385,6 +557,16 @@ body{
         margin:0 auto;
         background-color:#FF4343 ;
         border: none;
+        @media only screen and (min-width:768px) and (max-width:1024px){
+            line-height: 21px;
+            font-size: 18px;
+            max-width: 314px;
+        }
+        @media only screen and (min-width:320px) and (max-width:767px){
+            max-width: 279px;
+            line-height: 21px;
+            font-size: 18px;
+        }
     }
     &__button:hover{
         background-color: #E71414;
@@ -402,6 +584,15 @@ body{
         grid-template-columns: repeat(3, 1fr);
         background: #353C65;
         padding: 71px 0 67px;
+        @media only screen and (min-width:768px) and (max-width:1024px){
+        padding: 46px 0 41px;
+        }
+        @media only screen and (min-width:320px) and (max-width:767px){
+            max-width: 310px;
+            display: block;
+            margin: 0 auto;
+            padding: 33px 20px;
+        }
     }
     &__title{
         color: #FFF;
@@ -412,6 +603,14 @@ body{
         line-height: 21px;
         text-transform: uppercase;
         margin-bottom: 29px;
+        @media only screen and (min-width:768px) and (max-width:1024px){
+            margin-bottom: 17px;
+            line-height: 16px;
+            font-size: 14px;
+        }
+        @media only screen and (min-width:320px) and (max-width:767px){
+            margin-bottom: 34px;
+        }
     }
     &__text{
         color: #FFF;
@@ -419,11 +618,25 @@ body{
         font-size: 18px;
         line-height: 21px;
         text-transform: capitalize;
+        @media only screen and (min-width:768px) and (max-width:1024px){
+            line-height: 16px;
+            font-size: 14px;
+        }
+        @media only screen and (min-width:320px) and (max-width:767px){
+            margin-bottom: 69px;
+        }
     }
     &__icons{
         display: flex;
         justify-content: center;
         column-gap: 27px;
+        @media only screen and (min-width:768px) and (max-width:1024px){
+            column-gap: 23px;
+        }
+        @media only screen and (min-width:320px) and (max-width:767px){
+            column-gap: 16px;
+            margin-bottom: 59px;
+        }
     }
     &__title-icon{
         color: #FFF;
@@ -443,6 +656,11 @@ body{
     &__container{
         padding: 24px;
         background: #2C3154;
+        @media only screen and (min-width:320px) and (max-width:767px){
+            max-width: 310px;
+            margin: 0 auto;
+            padding: 28px 20px;
+        }
     }
     &__text{
         color: #808080;
@@ -452,5 +670,9 @@ body{
         font-weight: 400;
         line-height: 21px;
         text-transform: capitalize;
+        @media only screen and (min-width:320px) and (max-width:767px){
+            font-size: 14px;
+            line-height: 16px;
+        }
     }
 }
